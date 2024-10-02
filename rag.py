@@ -64,7 +64,7 @@ def main():
     model.train()
     print("Time taken to build index: ", time.time() - start)
     while True:
-        prompt = input("\n\nEnter another investment question (e.g. Have we invested in any generative AI companies in 2023?): ")
+        prompt = input("\n\nEnter your question: ")
         start = time.time()
         print(model(prompt))
         print("\nTime taken: ", time.time() - start)
